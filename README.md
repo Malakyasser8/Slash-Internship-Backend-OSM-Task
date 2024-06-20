@@ -15,10 +15,12 @@ Futher details about the endpoints can be found in the api documentation in post
 ## API Documentation
 Link to documentation: https://documenter.getpostman.com/view/33222407/2sA3XV8eic
 
-## Installation
 
+## Setup 
+You will need to run your database locally and add your connection string to a .env file. 
+Example:
 ```bash
-$ npm install
+DATABASE_URL="postgresql://username:password@localhost:5432/dbname?schema=public"
 ```
 
 ## Database Migration
@@ -26,6 +28,12 @@ $ npm install
 ```bash
 $ prisma migrate dev --name <migration-name>
 ```
+## Installation
+
+```bash
+$ npm install
+```
+
 
 ## Running the app
 
@@ -35,9 +43,6 @@ $ npm run start
 
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
 The server will run by default on : http://localhost:3000
